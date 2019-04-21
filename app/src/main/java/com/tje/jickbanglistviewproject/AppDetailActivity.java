@@ -4,11 +4,12 @@ import android.databinding.DataBindingUtil;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.tje.jickbanglistviewproject.databinding.ActivityAppDetailBinding;
 import com.tje.jickbanglistviewproject.datas.App;
 
 public class AppDetailActivity extends AppCompatActivity {
 
-    ActivityAppDetailBin act;
+    ActivityAppDetailBinding act;
     App mAppData;
 
 

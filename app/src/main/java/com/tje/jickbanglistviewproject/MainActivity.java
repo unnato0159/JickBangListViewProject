@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 App clickAppData = appList.get(position);
 
-                Intent intent = new Intent(MainActivity.this.AppDetailActivity.class);
+                Intent intent = new Intent(MainActivity.this,AppDetailActivity.class);
                 intent.putExtra("앱정보",clickAppData);
             }
         });
