@@ -20,5 +20,8 @@ public class AppDetailActivity extends AppCompatActivity {
 
         mAppData = (App)getIntent().getSerializableExtra("앱정보");
 
+        act.detailPriceTxt.setText(mAppData.housePrice);
+
+
     }
 }

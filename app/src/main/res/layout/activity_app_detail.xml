@@ -6,25 +6,32 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".AppDetailActivity"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="#FFFFFF">
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:src="@mipmap/ic_launcher"/>
+            android:layout_height="217dp"
+            android:src="@drawable/house6" />
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
+                android:padding="10dp"
+                android:background="#3c64bf"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
                 android:text="방주인에게 매물정보의 거래상태를 확인받은 매물입니다. .. "/>
-            <ImageView
-                android:src="@mipmap/ic_launcher"
-                android:layout_width="30dp"
-                android:layout_height="match_parent" />
+            <TextView
+                android:background="#2f58b5"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22"
+                android:textColor="#FFFFFF"/>
         </LinearLayout>
         <LinearLayout
             android:layout_marginTop="30dp"
@@ -33,20 +40,34 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/rounded"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="확인매물 19.04.03"/>
+                android:text="확인매물 19.04.03"
+                android:textColor="#026cff"/>
             <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/detailPriceTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="월세 500/40"/>
+                android:text="월세 500/40"
+                android:textColor="#000000"
+                android:textSize="30dp"/>
             <TextView
+                android:layout_marginTop="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3.6호선 불광역1분,도배,청소완료 관리잘 된원룸"/>
+                android:text="3.6호선 불광역1분,도배,청소완료 관리잘 된원룸"
+                android:textColor="#747474"/>
 
         </LinearLayout>
         <LinearLayout
+
+            android:layout_marginTop="20dp"
             android:gravity="center"
             android:orientation="horizontal"
             android:layout_width="match_parent"

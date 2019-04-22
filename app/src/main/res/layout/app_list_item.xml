@@ -1,24 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
 
     <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="2dp"
         android:padding="5dp"
         android:gravity="center_vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:background="#FFFFFF">
         <ImageView
+            android:id="@+id/imageView"
             android:layout_width="120dp"
             android:layout_height="100dp"
             android:src="@mipmap/ic_launcher"/>
             <LinearLayout
+                android:layout_marginLeft="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <LinearLayout
-                    android:gravity="top"
+                    android:gravity="center_vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
@@ -27,35 +33,44 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="100/12"
-                        android:textSize="17sp"/>
+                        android:textSize="17sp"
+                        android:textColor="#cb8b3e"/>
                     <TextView
                         android:id="@+id/floorTxt"
                         android:layout_marginLeft="5dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="2층"/>
-                    <ImageView
+                        android:text="2층"
+                        android:textColor="#000000"/>
+                    <TextView
+                        android:background="@drawable/stroke"
                         android:layout_marginLeft="5dp"
-                        android:layout_width="25dp"
-                        android:layout_height="20dp"
-                        android:src="@mipmap/ic_launcher"/>
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:src="@mipmap/ic_launcher"
+                        android:text="중계"
+                        android:textSize="13sp"
+                        android:textColor="#dcdcdc"/>
 
                 </LinearLayout>
                 <TextView
                     android:id="@+id/addressTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="주소"/>
+                    android:text="주소"
+                    android:textColor="#818688"/>
                 <TextView
                     android:id="@+id/homeContentTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="분리형원룸"/>
+                    android:text="분리형원룸"
+                    android:textColor="#818688"/>
                 <TextView
                     android:id="@+id/homeExplantionTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="이집은 정말 최고입니다...."/>
+                    android:text="이집은 정말 최고입니다...."
+                    android:textColor="#000000"/>
             </LinearLayout>
     </LinearLayout>
 </LinearLayout>
