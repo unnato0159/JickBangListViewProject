@@ -35,6 +35,15 @@ public class MainActivity extends AppCompatActivity {
         mAppAdapter = new AppAdapter(MainActivity.this,appList);
         act.jickBangListView.setAdapter(mAppAdapter);
 
+        act.addBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                  appList.add(new App(R.drawable.house3,"500/20","2층","서울시강남구","좋아요 아주","ㅋㅋㅋㅋㅋ"));
+                  mAppAdapter.notifyDataSetChanged();
+                  act.jickBangListView.smoothScrollToPosition(appList.size());
+            }
+        });
+
         act.jickBangListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -45,6 +54,19 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        act.jickBangListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+                appList.remove(position);
+                mAppAdapter.notifyDataSetChanged();
+
+                return true;
+
+            }
+        });
+
+
 
     }
 
